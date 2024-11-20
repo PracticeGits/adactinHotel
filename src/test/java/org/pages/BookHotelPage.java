@@ -12,7 +12,7 @@ public class BookHotelPage extends BaseClass {
 	}
 
 	//
-	// setters
+	// setters only
 	@FindBy(xpath = "//table//td[contains(text(),'Book A Hotel ')]")
 	private WebElement txtBookHotelSuccessMsg;
 
