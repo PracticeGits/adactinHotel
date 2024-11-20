@@ -11,8 +11,8 @@ public class BookHotelPage extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
-	//
-	// setters
+	//new page and valid
+	// setters only
 	@FindBy(xpath = "//table//td[contains(text(),'Book A Hotel ')]")
 	private WebElement txtBookHotelSuccessMsg;
 
