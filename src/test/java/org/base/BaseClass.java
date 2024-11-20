@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseClass {
-	//checking
+	//checking commit and push
 	public static WebDriver driver;
 	public static String orderNumber;
 	//new outgoing
