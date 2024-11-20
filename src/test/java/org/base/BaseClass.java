@@ -3,6 +3,8 @@ package org.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
@@ -71,11 +73,12 @@ public class BaseClass {
 		
 		Properties properties = new Properties();
 		//properties.load(new FileInputStream(getProjectPath() + "\\Config\\config.properties"));
-		properties.load(new FileInputStream("C:\\Users\\Kulasekaran\\eclipse-workspace\\Adactin_hotel\\Config\\config.properties"));
+		properties.load(Files.newInputStream(Paths.get("C:\\Users\\Kulasekaran\\eclipse-workspace\\Adactin_hotel\\Config\\config.properties")));
 		
 		Object object = properties.get(key);
-		String value = (String) object;
-		return value;
+		String value;
+        value = (String) object;
+        return value;
 	}
 
 	public static void getDriver(String browserType) {
